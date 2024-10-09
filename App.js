@@ -3,8 +3,11 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
+    // <div>
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      {/*<p>,h1,span */}
+      <Text style={styles.hello}>hello world</Text>
+      <Text style={styles.emoji}>🤣</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +20,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  hello: {
+    color: 'cyan',
+    fontWeight: 'bold',
+    fontSize: 40,
+  },
+  emoji: {
+    fontSize: 40,
+  }
 });
